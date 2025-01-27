@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website-XzyyFall</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url('hantu.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .text-container {
+      position: absolute;
+      top: 100px;
+      right: 20px;
+      background-color: black;
+      color: white;
+      padding: 10px;
+      font-size: 30px;
+    }
+    .kotak-gambar {
+      width: 300px;
+      height: 200px;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+    .kotak-gambar img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .marquee {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 10s linear infinite;
+    }
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="text-container">
+    <div class="marquee">Thanks Udah Mampir🗿🗿🗿</div>
+  </div>
+  <div class="kotak-gambar">
+    <img src="seram.jpg" alt="Gambar seram" />
+    <button onclick="playAudio()">Play Audio</button>
+    <audio id="audio" loop controls preload="auto">
+      <source src="Creepy.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+  <script>
+    function playAudio() {
+      document.getElementById("audio").play();
+    }
+  </script>
+</body>
+</html>
